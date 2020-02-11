@@ -13,3 +13,8 @@ We have multiple Developers working with the same Application and have there own
 
 
 <img src="images/Continuous-Intigration.png">
+
+# What is Continuous Delivery / Deployment
+Once you package is ready you may release this to an automated pipeline known as **Continuos Delivery** CBA labs is good example. Now the next step would be take the packaged application and automatically deploy it in a target environment this could be **On-Prim Cloud Solution** like VmWare or Public Cloud Platform like  **AWS** ,**GCP** or **Azure**. So this process of automatically updating our production environment with the changes in the application is referred as **Continuous Deployment**.
+
+<img src="images/Continuous-Deployment.png">
