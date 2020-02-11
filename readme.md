@@ -2,10 +2,10 @@
 
 ### Index
   1. [Introduction-to-Continuous-Integration-and-Jenkins-CI-CD](https://github.com/submah/jenkins-tutorial/Introduction-to-Continuous-Integration-and-Jenkins-CI-CD.md)
-  2. Jenkins Installation
+  2. [Jenkins Installation](https://github.com/submah/jenkins-tutorial/Jenkins-Installation.md)
   3. Configure Jenkins and User Management
   4. Jenkins jobs setup
   5. Jenkins Integration
   6. Jenkins User administration
-  
+
 
