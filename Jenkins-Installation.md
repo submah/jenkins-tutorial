@@ -42,6 +42,37 @@ sudo cp jenkins.war tomcat/webapps/
 + cat /root/.jenkins/secrets/initialAdminPassword
 ```
 > Note: Now you can access the Jenkins Web-UI with **Node-IP:8080/jenkins**
+
+## You can install jenkins directly through yum package
+```code
+#Enable Jenkins repository by importing hte GPG key
+sudo curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+
+#Add the repository to your system with
+sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+
+#Once the repository is enabled, install the latest stable version of Jenkins by
+sudo yum install jenkins -y
+
+#start the Jenkins service with
+sudo systemctl start jenkins
+
+#To check whether it started successfully
+sudo systemctl status jenkins
+
+#Finally enable the Jenkins service to start on system boot
+sudo systemctl enable jenkins
+```
+
+## Setting Up Jenkins
+To set up your new Jenkins installation, open your browser and type your domain or IP address followed by port 8080:
+
+```code
+http://your_ip_or_domain:8080
+```
+A screen similar to the following will appear, prompting you to enter the Administrator password that is created during the installation:
+
+<img src="images/Unlock-Jenkins.PNG">
  
   
 
