@@ -25,6 +25,20 @@ sudo ln -s apache-tomcat-9.0.31 tomcat #To create a symbolic link
 
 sudo sh /opt/tomcat/bin/startup.sh #To start the Tomcat
 ```
+> Note: Now you can access the tomcat Web-UI with Node-IP:8080
+
+## Downloading jenkins WAR package
+
+```code
+sudo wget https://updates.jenkins-ci.org/download/war/2.220/jenkins.war
+```
+
+## Installing the WAR
+```code
+sudo cp jenkins.war tomcat/webapps/
+```
+
+> Note: Now you can access the Jenkins Web-UI with **Node-IP:8080/jenkins**
  
   
 
