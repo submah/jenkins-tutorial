@@ -8,9 +8,12 @@
 
 
  ## Installing Tomcat 
- ```cpp
+ ```code
  sudo yum update -y
+```
+ Download the Tomcat tarball [click me](https://tomcat.apache.org/download-90.cgi)
 
- Download the Tomcat tarball [#click me](https://tomcat.apache.org/download-90.cgi)
- ```
+ 
+
+
 
