@@ -7,13 +7,25 @@
  3. **Starting and Stopping Jenkins**
 
 
- ## Installing Tomcat 
- ```code
- sudo yum update -y
-```
- Download the Tomcat tarball [click me](https://tomcat.apache.org/download-90.cgi)
+
+## Install the Java Development Kit
+```code
+sudo yum install java-11-openjdk-devel
+``` 
+
+Download the Tomcat tarball [click me](https://tomcat.apache.org/download-90.cgi)
 
 >wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
+
+## Installing Tomcat 
+```code
+sudo yum update -y
+sudo tar -xvf apache-tomcat-9.0.31.tar.gz -C /opt/
+sudo ln -s apache-tomcat-9.0.31 tomcat #To create a symbolic link
+
+sudo sh /opt/tomcat/bin/startup.sh #To start the Tomcat
+```
+ 
   
 
 
