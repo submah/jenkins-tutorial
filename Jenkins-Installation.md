@@ -13,7 +13,8 @@
 ```
  Download the Tomcat tarball [click me](https://tomcat.apache.org/download-90.cgi)
 
- 
+>wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
+  
 
 
 
