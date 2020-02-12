@@ -19,3 +19,9 @@ In the Manage Jenkins page, click on **Setup Security** button
 In the next page, select the enable security check box, Security Realm -> Jenkin's own user database, apply and save
 
 <img src="images/Enable-Security.PNG">
+
+Now a link Sign up will be available. Click on the same and fill the form to sign up. Once successful, log in with the account created.
+
+>Note: You can get SignUp link on Jenkins-Node-IP:8080/signup
+
+<img src="images/Create-Account-SignUp.PNG">
