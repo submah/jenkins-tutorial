@@ -37,7 +37,10 @@ sudo wget https://updates.jenkins-ci.org/download/war/2.220/jenkins.war
 ```code
 sudo cp jenkins.war tomcat/webapps/
 ```
-
+```diff
+- To get Jenkins Initial password for login 
++ cat /root/.jenkins/secrets/initialAdminPassword
+```
 > Note: Now you can access the Jenkins Web-UI with **Node-IP:8080/jenkins**
  
   
