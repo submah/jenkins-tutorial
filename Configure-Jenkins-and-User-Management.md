@@ -20,8 +20,19 @@ In the next page, select the enable security check box, Security Realm -> Jenkin
 
 <img src="images/Enable-Security.PNG">
 
+## Create a new User
+
 Now a link Sign up will be available. Click on the same and fill the form to sign up. Once successful, log in with the account created.
 
 >Note: You can get SignUp link on Jenkins-Node-IP:8080/signup
 
 <img src="images/Create-Account-SignUp.PNG">
+
+## Generate ssh key for Jenkins user
+```code
+sudo sed -i '/jenkins/s/false/bash/g' /etc/passwd
+#Or
+sudo usermod -s /bin/bash jenkins
+sudo -u jenkins ssh-keygen
+#That will generate the key for you here: /var/lib/jenkins/.ssh/id_rsa.pub
+```
