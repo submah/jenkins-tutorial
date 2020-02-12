@@ -5,3 +5,13 @@
 2. **Create a new user**
 3. **Generate ssh key for Jenkins user**
 4. **Plug-in management**
+
+
+## Secure Jenkins
+Once Jenkins is up and running, Open the Jenkins Home page and click on **Manage Jenkins**
+
+<img src="images/Manage-Jenkins.png">
+
+In the Manage Jenkins page, click on **Setup Security** button
+
+<img src="images/Setup-Security.PNG">
