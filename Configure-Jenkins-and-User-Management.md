@@ -15,3 +15,7 @@ Once Jenkins is up and running, Open the Jenkins Home page and click on **Manage
 In the Manage Jenkins page, click on **Setup Security** button
 
 <img src="images/Setup-Security.PNG">
+
+In the next page, select the enable security check box
+
+<img src="images/Enable-Security.PNG">
