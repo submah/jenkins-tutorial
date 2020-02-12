@@ -36,3 +36,10 @@ sudo usermod -s /bin/bash jenkins
 sudo -u jenkins ssh-keygen
 #That will generate the key for you here: /var/lib/jenkins/.ssh/id_rsa.pub
 ```
+
+## Plug-in management
+Jenkins be easily extended via adding additional plugins in order to accommodate more functionalities. This can be easily done by selecting the option Manage Jenkins - Manage Plugins as shown below
+
+<img src="images/Manage-Plugin.PNG">
+
+Now search the pulgin and click on Install.
