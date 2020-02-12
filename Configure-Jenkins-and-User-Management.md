@@ -16,6 +16,6 @@ In the Manage Jenkins page, click on **Setup Security** button
 
 <img src="images/Setup-Security.PNG">
 
-In the next page, select the enable security check box
+In the next page, select the enable security check box, Security Realm -> Jenkin's own user database, apply and save
 
 <img src="images/Enable-Security.PNG">
