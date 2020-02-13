@@ -18,6 +18,14 @@
 
   <img src="images/Jenkins-Dev.PNG">
 
-  Now got to the Build and click on **Add Build Step** then select **Execute Shell**. In the Command box provide the command to execute, then click on **save** button.
+  Now got to the Build and click on **Add Build Step** then select **Execute Shell**. In the Command box provide the command to execute, then click on **save** button then click on BuildNow to trigger a build.
 
   <img src="images/Jenkins-FreeStyle-Job.PNG">
+
+  <img src="images/Jenkins-FreeStyle-Job-BuildNow.PNG">
+
+  To view the Console output
+  
+  <img src="images/Jenkins-FreeStyle-Job-Log.PNG">
+
+  <img src="images/Jenkins-FreeStyle-Job-ConsoleOutput.PNG"> 
