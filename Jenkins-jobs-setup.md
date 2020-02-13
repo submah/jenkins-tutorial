@@ -25,7 +25,16 @@
   <img src="images/Jenkins-FreeStyle-Job-BuildNow.PNG">
 
   To view the Console output
-  
+
   <img src="images/Jenkins-FreeStyle-Job-Log.PNG">
 
   <img src="images/Jenkins-FreeStyle-Job-ConsoleOutput.PNG"> 
+  
+  #### Maven job
+  Login to Jenkins then click on **Manage Jenkins** then click on **Global Tool Configuration**. Go to Maven and click on the checkbox to Install automatically then save the changes.
+
+  <img src="images/Jenkins-Maven-Installation.PNG">
+
+  To Create a Maven job Click on New Item on you Jenkins dashboard then provide name to you job then select Maven Project
+
+  <img src="images/Jenkins-Maven-Job">
