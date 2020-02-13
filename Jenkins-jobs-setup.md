@@ -37,4 +37,4 @@
 
   To Create a Maven job Click on New Item on you Jenkins dashboard then provide name to you job then select Maven Project
 
-  <img src="images/Jenkins-Maven-Job">
+  <img src="images/Jenkins-Maven-Job.PNG">
