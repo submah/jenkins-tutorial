@@ -17,3 +17,7 @@
   <img src="images/Jenkins-New-Item.PNG">
 
   <img src="images/Jenkins-Dev.PNG">
+
+  Now got to the Build and click on **Add Build Step** then select **Execute Shell**. In the Command box provide the command to execute, then click on **save** button.
+
+  <img src="images/Jenkins-FreeStyle-Job.PNG">
