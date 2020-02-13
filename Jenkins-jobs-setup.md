@@ -66,3 +66,7 @@
  echo "You have selected ${Fruit}"
  ```
  <img src="images/Jenkins-Choice-Parameter-Build.PNG">
+
+ Now click on **Build with Parameters** Select your choice and click on Build
+ 
+ <img src="Jenkins-Choice-Parameter-Build-Job.PNG">
