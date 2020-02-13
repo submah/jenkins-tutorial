@@ -7,3 +7,13 @@
   3. **Email notification jobs**
   4. **Parallel jobs configuration**
   5. **nodes (slaves) configuration**
+
+
+  ## Setting Up Jenkins Maven and Freestyle job
+
+  #### Freestyle job
+  For Freestyle job Login to jenkins then click on New Item then provide a name to youre job then select FreeStyle then click on OK.
+
+  <img src="images/Jenkins-New-Item.PNG">
+
+  <img src="images/Jenkins-Dev.PNG">
