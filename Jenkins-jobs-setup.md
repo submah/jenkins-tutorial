@@ -41,3 +41,17 @@
   To Create a Maven job Click on New Item on you Jenkins dashboard then provide name to you job then select Maven Project
 
   <img src="images/Jenkins-Maven-Job.PNG">
+
+  GitHub Project URL https://github.com/submah/deploy-hello-world-with-jenkins.git
+ 
+  Go to Source Code Management and select Git then provide the repository url as above else you can specify you own github url.
+  
+  <img src="Jenkins-Maven-Git.PNG">
+  
+  On Build specify the Goals and Options as **clean package**
+
+  <img src="images/Jenkins-Maven-Build.PNG">
+ 
+  Save the changes and clik on Build now, to see the Console Output click on hte build Number
+
+  <img src="images/Jenkins-Maven-Build-Console-Outpu.PNG">
