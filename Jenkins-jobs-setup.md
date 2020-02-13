@@ -72,3 +72,21 @@
  <img src="images/Jenkins-Choice-Parameter-Build-Job.PNG">
 
  <img src="images/Jenkins-Choice-Parameter-Build-Job-Output.PNG">
+
+### Boolean Parameter
+Go to any project click on **This project is parameterized** then select **String Parameter** under Name field specify FIRST_NAME, add one more **string parameter** under name field specify LAST_NAME then select **boolean Parameter** and under Name field specify SHOW.
+
+<img src="images/Jenkins-boolean-Parameter.PNG">
+
+Now go to Build section and select **Execute Shell** and provide the below code
+```shell
+#!/bin/bash
+ 
+
+if [ "$SHOW" = "true" ]; then
+echo "Hello, $FIRST_NAME $LAST_NAME"
+else
+echo "You have not selected the show box"
+fi
+```
+<img src="images/Jenkins-boolean-Parameter-Build.PNG">
