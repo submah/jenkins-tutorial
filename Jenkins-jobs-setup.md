@@ -90,3 +90,15 @@ echo "You have not selected the show box"
 fi
 ```
 <img src="images/Jenkins-boolean-Parameter-Build.PNG">
+
+## Email notification jobs
+Login to Jenkins, go to **Manage Jenkins** then click on **Configure System** under **Email Notification** provide SMTP server
+you can get list of SMTP Server details [here](https://www.arclab.com/en/kb/email/list-of-smtp-and-pop3-servers-mailserver-list.html)
+
+<img src="images/Jenkins-Email-Notification.png">
+
+Now go to the Jenkins job where you want to setup email notification and then click on Configure.
+
+Under Post-build Actions click on E-mail Notification.
+
+<img src="images/Jenkins-Email-PostBuild.png">
