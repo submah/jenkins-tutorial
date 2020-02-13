@@ -32,7 +32,10 @@
   
   #### Maven job
   Login to Jenkins then click on **Manage Jenkins** then click on **Global Tool Configuration**. Go to Maven and click on the checkbox to Install automatically then save the changes.
-
+  
+  To Install Git 
+  <img src="images/Jenkins-Maven-Git-Installation.PNG">
+  
   <img src="images/Jenkins-Maven-Installation.PNG">
 
   To Create a Maven job Click on New Item on you Jenkins dashboard then provide name to you job then select Maven Project
