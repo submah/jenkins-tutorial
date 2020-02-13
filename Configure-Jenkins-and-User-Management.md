@@ -43,3 +43,7 @@ Jenkins be easily extended via adding additional plugins in order to accommodate
 <img src="images/Manage-Plugin.PNG">
 
 Now search the pulgin and click on Install.
+
+Plugins: 
+parameterized-trigger
+conditional-buildstep
