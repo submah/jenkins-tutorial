@@ -55,3 +55,14 @@
   Save the changes and clik on Build now, to see the Console Output click on hte build Number
 
   <img src="images/Jenkins-Maven-Build-Console-Outpu.PNG">
+
+  ## Jenkins parametrized jobs setup
+  #### Choice Parameter
+ Go to Any Job and click on **This project is parameterized** checkbox. Then click on Add parameter and select **Choice Parameter**
+ 
+ <img src="images/Jenkins-Choice-Parameter.PNG">
+ Go to Build and select **Execute Shell** and Provide the below command 
+ ```shell
+ echo "You have selected ${Fruit}"
+ ```
+ <img src="images/Jenkins-Choice-Parameter-Build.PNG">
