@@ -119,6 +119,8 @@ It will also monitor the slave state (offline or online) and getting back the bu
 > Note: java must be install on the slave node
 ```code
 sudo yum install java-11-openjdk-devel
+sudo yum install git -y
+sudo yum install maven -y
 ```
 
 Login you Jenkins and click on **Manage Jenkins** in the left corner on the Jenkins dashboard.
@@ -136,5 +138,10 @@ Select Permanent Agent and click the OK button. Initially, you will get only one
 <img src="images/Jenkins-Slave-Permanent-Agent.PNG">
 
 <img src="images/Jenkins-Slave-Configuration.PNG">
+
+## Create Maven build on Jenkins Slave
+In jenkins go the the Maven job, Under general section click on the checkbox **Restrict where this project can be run** and in **Label Expression** provide the node label name i.e **demo-slave** now click on apply and save.
+
+<img src="images/Jenkins-Slave-Maven-Build.PNG">
 
 
