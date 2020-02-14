@@ -102,3 +102,11 @@ Now go to the Jenkins job where you want to setup email notification and then cl
 Under Post-build Actions click on E-mail Notification.
 
 <img src="images/Jenkins-Email-PostBuild.png">
+
+
+## Parallel jobs configuration
+By default, only a single build of a project is executed at a time — any other requests to start building that project will remain in the build queue until the first build is complete.
+
+To enable parallel job configuration for a job, loing to **Jenkins dashboard** then click on **Configure**  and enable the checkbox **Execute concurrent builds if necessary**
+
+<img src="images/Jenkins-Parallel-Job.PNG">
