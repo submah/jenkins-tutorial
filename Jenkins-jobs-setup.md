@@ -116,6 +116,11 @@ Jenkins is an awesome Continuous Integration tool which allows you to add multip
 
 It will also monitor the slave state (offline or online) and getting back the build result responses from slaves and the display build results on the console output. The workload of building jobs is delegated to multiple slaves.
 
+> Note: java must be install on the slave node
+```code
+sudo yum install java-11-openjdk-devel
+```
+
 Login you Jenkins and click on **Manage Jenkins** in the left corner on the Jenkins dashboard.
 
 <img src="images/Manage-Jenkins.png">
@@ -123,5 +128,13 @@ Login you Jenkins and click on **Manage Jenkins** in the left corner on the Jenk
 Then click on the option Manage Nodes.
 
 <img src="images/Jenkins-Manage-Nodes.PNG">
+
+Select New Node and enter the name of the node in the Node Name field.
+
+Select Permanent Agent and click the OK button. Initially, you will get only one option, "Permanent Agent." Once you have one or more slaves you will get the "Copy Existing Node" option.
+
+<img src="images/Jenkins-Slave-Permanent-Agent.PNG">
+
+<img src="images/Jenkins-Slave-Configuration.PNG">
 
 
