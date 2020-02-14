@@ -6,7 +6,7 @@
   2. **Jenkins parametrized jobs setup (choice params,boolean params)**
   3. **Email notification jobs**
   4. **Parallel jobs configuration**
-  5. **nodes (slaves) configuration**
+  5. **Master slave configuration**
 
 
   ## Setting Up Jenkins Maven and Freestyle job
@@ -110,3 +110,18 @@ By default, only a single build of a project is executed at a time — any other
 To enable parallel job configuration for a job, loing to **Jenkins dashboard** then click on **Configure**  and enable the checkbox **Execute concurrent builds if necessary**
 
 <img src="images/Jenkins-Parallel-Job.PNG">
+
+## Master Slave configuration
+Jenkins is an awesome Continuous Integration tool which allows you to add multiple slaves as per your project requirement to a central Master server.
+
+It will also monitor the slave state (offline or online) and getting back the build result responses from slaves and the display build results on the console output. The workload of building jobs is delegated to multiple slaves.
+
+Login you Jenkins and click on **Manage Jenkins** in the left corner on the Jenkins dashboard.
+
+<img src="images/Manage-Jenkins.png">
+
+Then click on the option Manage Nodes.
+
+<img src="images/Jenkins-Manage-Nodes.PNG">
+
+
