@@ -7,6 +7,7 @@
   3. **Email notification jobs**
   4. **Parallel jobs configuration**
   5. **Master slave configuration**
+  6. **Create Maven build on Jenkins Slave**
 
 
   ## Setting Up Jenkins Maven and Freestyle job
