@@ -44,6 +44,7 @@ Jenkins be easily extended via adding additional plugins in order to accommodate
 
 Now search the pulgin and click on Install.
 
-Plugins: 
+>Plugins: 
 parameterized-trigger
 conditional-buildstep
+Role-based Authorization Strategy
