@@ -1,4 +1,4 @@
-agent { node ( label 'maven_demo'){
+node ('maven_demo'){
     stage('Cloning From Git'){
             
             git changelog: false, poll: false, url: 'https://github.com/submah/maven-jenkins-job.git'
