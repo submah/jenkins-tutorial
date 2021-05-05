@@ -1,5 +1,5 @@
 
-<img src="images/c4logo.png">
+<img src="../images/c4logo.png">
 
 # In this tutorials we are going to learn
  1. **Downloading and Installing Jenkins using TomCat**

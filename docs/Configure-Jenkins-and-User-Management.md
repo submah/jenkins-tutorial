@@ -1,4 +1,4 @@
-<img src="images/c4logo.png">
+<img src="../images/c4logo.png">
 
 # In this tutorials we are going to learn
 1. **Secure Jenkins**

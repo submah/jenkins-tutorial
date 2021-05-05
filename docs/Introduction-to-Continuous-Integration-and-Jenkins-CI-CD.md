@@ -1,4 +1,4 @@
-<img src="images/c4logo.png">
+<img src="../images/c4logo.png">
 
 ### In this tutorial we are going to learn
    * What is Continuous Integration
