@@ -78,8 +78,8 @@ A screen similar to the following will appear, prompting you to enter the Admini
 When you Install the Jenkins through Yum package a jenkins service already created by default.
 
 ## Run Jenkins without tomcat
-    Download the Jenkins war file <a href="http://mirrors.jenkins.io/war-stable" target="_blank">Click Here</a>
-[link](http://mirrors.jenkins.io/war-stable){:target="_blank"}
+Download the Jenkins war file [link](http://mirrors.jenkins.io/war-stable)
+
 ## Starting and Stopping Jenkins
 ```code
 sudo service jenkins stop
