@@ -10,15 +10,15 @@
 ## Secure Jenkins
 Once Jenkins is up and running, Open the Jenkins Home page and click on **Manage Jenkins**
 
-<img src="images/Manage-Jenkins.png">
+<img src="../images/Manage-Jenkins.png">
 
 In the Manage Jenkins page, click on **Setup Security** button
 
-<img src="images/Setup-Security.PNG">
+<img src="../images/Setup-Security.PNG">
 
 In the next page, select the enable security check box, Security Realm -> Jenkin's own user database, apply and save
 
-<img src="images/Enable-Security.PNG">
+<img src="../images/Enable-Security.PNG">
 
 ## Create a new User
 
@@ -26,7 +26,7 @@ Now a link Sign up will be available. Click on the same and fill the form to sig
 
 >Note: You can get SignUp link on Jenkins-Node-IP:8080/signup
 
-<img src="images/Create-Account-SignUp.PNG">
+<img src="../images/Create-Account-SignUp.PNG">
 
 ## Generate ssh key for Jenkins user
 ```code
@@ -40,7 +40,7 @@ sudo -u jenkins ssh-keygen
 ## Plug-in management
 Jenkins be easily extended via adding additional plugins in order to accommodate more functionalities. This can be easily done by selecting the option Manage Jenkins - Manage Plugins as shown below
 
-<img src="images/Manage-Plugin.PNG">
+<img src="../images/Manage-Plugin.PNG">
 
 Now search the pulgin and click on Install.
 
