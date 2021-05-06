@@ -78,13 +78,36 @@ A screen similar to the following will appear, prompting you to enter the Admini
 When you Install the Jenkins through Yum package a jenkins service already created by default.
 
 ## Run Jenkins without tomcat
+
 Download the Jenkins war file [link](http://mirrors.jenkins.io/war-stable)
 
-## Starting and Stopping Jenkins
-```code
-sudo service jenkins stop
-sudo service jenkins start
+cp jenkins.war /usr/local/bin/jenkins.war
+
+vi /etc/systemd/system/jenkins.service
+
 ```
+[Unit]
+Description=Jenkins Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/java -jar /usr/local/bin/jenkins.war
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Enable, Start and Stop Jenkins
+systemctl daemon-reload 
+
+systemctl start jenkins.service
+
+systemctl enable jenkins.service
+
+
 
  
   
