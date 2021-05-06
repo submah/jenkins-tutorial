@@ -72,10 +72,13 @@ http://your_ip_or_domain:8080
 ```
 A screen similar to the following will appear, prompting you to enter the Administrator password that is created during the installation:
 
-<img src="images/Unlock-Jenkins.PNG">
+<img src="../images/Unlock-Jenkins.PNG">
 
 ## Creating Jenkins as a Service
 When you Install the Jenkins through Yum package a jenkins service already created by default.
+
+## Run Jenkins without tomcat
+    * Download the Jenkins war file <a href="http://mirrors.jenkins.io/war-stable" target="_blank">Click Here</a>
 
 ## Starting and Stopping Jenkins
 ```code
