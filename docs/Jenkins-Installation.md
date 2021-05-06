@@ -79,7 +79,7 @@ When you Install the Jenkins through Yum package a jenkins service already creat
 
 ## Run Jenkins without tomcat
     Download the Jenkins war file <a href="http://mirrors.jenkins.io/war-stable" target="_blank">Click Here</a>
-
+[link](http://mirrors.jenkins.io/war-stable){:target="_blank"}
 ## Starting and Stopping Jenkins
 ```code
 sudo service jenkins stop
