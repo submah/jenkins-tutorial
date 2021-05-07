@@ -254,6 +254,10 @@ docker run --rm -it docker-slave:v1 mvn -version
 
 <img src="../images/docker-slave-post-build-action.png">  
 
+  * Now click on **Build Now**
+
+<img src="../images/docker-slave-job-output.png">
+
 
 
 
