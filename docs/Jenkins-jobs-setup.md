@@ -8,6 +8,7 @@
   4. **Parallel jobs configuration**
   5. **Master slave configuration**
   6. **Create Maven build on Jenkins Slave**
+  7. **Create Maven build on Jenkins with Custom Docker Slave**
 
 
   ## Setting Up Jenkins Maven and Freestyle job
