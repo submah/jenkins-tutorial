@@ -242,6 +242,19 @@ docker run --rm -it docker-slave:v1 mvn -version
 
   * On Source Code Management mention **Repository URL** as **https://github.com/submah/maven-helloworld.git**
 
+<img src="../images/docker-slave-git.png">
+
+  * On Post Build Action, 
+    click Add Post Build Action >> Archive the Artifacts
+    
+    Mentioned Files to archive as **target/*.war** then click on **apply** and **save**
+
+<img src="../images/docker-slave-post-build-action-archice-artifacts.png"> 
+    
+
+<img src="../images/docker-slave-post-build-action.png">  
+
+
 
 
 
