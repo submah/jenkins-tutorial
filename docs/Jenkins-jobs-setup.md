@@ -175,5 +175,21 @@ docker run --rm -it docker-slave:v1 mvn -version
 
 <img src="../images/docker-mvn-version.PNG">
 
+  * Install required Plugins on Jenkins 
+    1. Docker plugin
+    2. git plugin
+
+  * Once plugins has been install go to 
+  Jenkins Dashboard >> Manage Jenkins >> Manage Nodes and Clouds >> Configure Clouds
+
+<img src="../images/Manage-Jenkins.PNG">  
+
+<img src="../images/manage-nodes-and-clouds.png">  
+
+<img src="../images/configure-clouds.png"> 
+
+
+
+
 
 
