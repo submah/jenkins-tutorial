@@ -158,6 +158,14 @@ On CentOS7
 
 ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock
 
+#Reload the daemon
+
+systemctl daemon-reload
+
+#Restart the Docker service
+
+systemctl restart docker
+
 ```
 
   * File: Dockerfile
