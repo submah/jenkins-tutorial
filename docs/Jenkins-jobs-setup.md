@@ -188,6 +188,10 @@ docker run --rm -it docker-slave:v1 mvn -version
 
 <img src="../images/configure-clouds.png"> 
 
+  * Now Click on Add and New Cloud >> Docker
+
+<img src="../images/container-slave.PNG">  
+
 
 
 
