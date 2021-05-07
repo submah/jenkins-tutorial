@@ -229,6 +229,24 @@ docker run --rm -it docker-slave:v1 mvn -version
 <img src="../images/docker-agent-templates-3.png">
 
 
+  * Create a Jenkins job to test 
+    Go to Jenkins Dashboard >> New Items 
+
+    provide a name i.e. **jenkins-maven-docker-slave-job**, select job as **Maven Project** then click on **OK**
+
+<img src="../images/jenkins-maven-docker-slave-job.png">  
+
+  * Now click on **Configure** >> On **Restrict where this project can be run** mentioned the **Label Expression** as **docker-slave-demo**
+
+<img src="../images/docker-slave-label-expression.png">
+
+  * On Source Code Management mention **Repository URL** as **https://github.com/submah/maven-helloworld.git**
+
+
+
+
+
+
 
 
 
