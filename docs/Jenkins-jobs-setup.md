@@ -108,7 +108,7 @@ Under Post-build Actions click on E-mail Notification.
 ## Parallel jobs configuration
 By default, only a single build of a project is executed at a time — any other requests to start building that project will remain in the build queue until the first build is complete.
 
-To enable parallel job configuration for a job, loing to **Jenkins dashboard** then click on **Configure**  and enable the checkbox **Execute concurrent builds if necessary**
+To enable parallel job configuration for a job, login to **Jenkins dashboard** then click on **Configure**  and enable the checkbox **Execute concurrent builds if necessary**
 
 <img src="../images/Jenkins-Parallel-Job.PNG">
 
@@ -144,5 +144,35 @@ Select Permanent Agent and click the OK button. Initially, you will get only one
 In jenkins go the the Maven job, Under general section click on the checkbox **Restrict where this project can be run** and in **Label Expression** provide the node label name i.e **demo-slave** now click on apply and save.
 
 <img src="../images/Jenkins-Slave-Maven-Build.PNG">
+
+## Create Maven build on Jenkins with Custom Docker Slave
+Inorde to setup Docker slave on jenkins, first we have to crate our custom Dockerfile. Use the below code and commands
+
+  * File: Dockerfile
+
+```Dockerfile    
+  FROM jenkins/ssh-slave    
+  MAINTAINER submah@c4clouds.com    
+  RUN apt-get -y update    
+  RUN apt-get install maven -y    
+  RUN mkdir /root/.m2    
+```    
+
+  * Create Image from the Dockerfile
+
+```
+docker build -t docker-slave:v1 .
+
+```
+
+  * Check the Image is creating container and giving maven version output 
+
+```
+docker run --rm -it docker-slave:v1 mvn -version
+
+```
+
+<img src="../images/docker-mvn-version.PNG">
+
 
 
