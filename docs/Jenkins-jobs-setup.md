@@ -147,7 +147,9 @@ In jenkins go the the Maven job, Under general section click on the checkbox **R
 <img src="../images/Jenkins-Slave-Maven-Build.PNG">
 
 ## Create Maven build on Jenkins with Custom Docker Slave
-Inorde to setup Docker slave on jenkins, first we have to crate our custom Dockerfile. Use the below code and commands
+Inorde to setup Docker slave on jenkins, first we have to [Install Docker](https://github.com/submah/docker-tutorials/blob/master/install_docker_centos7.md) and crate our custom Dockerfile. Use the below code and commands
+
+
 
   * File: Dockerfile
 
@@ -191,6 +193,8 @@ docker run --rm -it docker-slave:v1 mvn -version
   * Now Click on Add and New Cloud >> Docker
 
 <img src="../images/container-slave.PNG">  
+
+  * Click on Docker Cloud Details
 
 
 
