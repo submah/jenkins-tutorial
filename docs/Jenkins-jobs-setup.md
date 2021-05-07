@@ -211,7 +211,24 @@ docker run --rm -it docker-slave:v1 mvn -version
 
 <img src="../images/container-slave.PNG">  
 
-  * Click on Docker Cloud Details
+  * Click on Docker Cloud Details and provide Docker Host URI
+    type **tcp://127.0.0.1:2376** >> Click on Test Connection
+
+  **Note: If you are getting docker version then its working. proceed to next step**
+
+  *  Now click on Docker Agent templates
+  provide a name i.e. **docker-slave-demo** on **Labels** >> click on the **Enable** checkbox 
+  provide a name i.e. **docker-slave-demo** on **Name**, Provide Docker Image i.e. **docker-slave:v1**
+  provide **Remote File System Root** as **/home/jenkins**, Usage as **Use this node as much as possible** 
+  **Connection Method** as **Attach Docker Container**, **User** as **root**
+  now click on **apply** and **save**
+
+<img src="../images/docker-cloud-details.png">
+<img src="../images/docker-agent-templates-1.png">
+<img src="../images/docker-agent-templates-2.png">
+<img src="../images/docker-agent-templates-3.png">
+
+
 
 
 
