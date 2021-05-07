@@ -182,7 +182,7 @@ docker run --rm -it docker-slave:v1 mvn -version
   * Once plugins has been install go to 
   Jenkins Dashboard >> Manage Jenkins >> Manage Nodes and Clouds >> Configure Clouds
 
-<img src="../images/Manage-Jenkins.PNG">  
+<img src="../images/Manage-Jenkins.png">  
 
 <img src="../images/manage-nodes-and-clouds.png">  
 
