@@ -10,21 +10,81 @@
 
 ## Install the Java Development Kit
 ```code
-sudo yum install java-11-openjdk-devel
+sudo yum install java-1.8.0-openjdk-devel
 ``` 
 
-Download the Tomcat tarball [click me](https://tomcat.apache.org/download-90.cgi)
+## Create Tomcat system user
 
->wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
+```
+sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+```
+
+## Download Tomcat 
+We will download the latest version of Tomcat 9.x.x from the [Tomcat downloads page](https://tomcat.apache.org/download-90.cgi) .
+
+wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
 
 ## Installing Tomcat 
 ```code
 sudo yum update -y
-sudo tar -xvf apache-tomcat-9.0.31.tar.gz -C /opt/
-sudo ln -s apache-tomcat-9.0.31 tomcat #To create a symbolic link
+sudo tar -xvf apache-tomcat-9.0.31.tar.gz -C /tmp
 
-sudo sh /opt/tomcat/bin/startup.sh #To start the Tomcat
+sudo mv apache-tomcat-9.0.31 /opt/tomcat/
+
+sudo ln -s /opt/tomcat/apache-tomcat-9.0.31 /opt/tomcat/latest #To create a symbolic link
+
+sudo chown -R tomcat: /opt/tomcat #change the directory ownership 
+
+sudo sh -c 'chmod +x  /opt/tomcat/latest/bin/*.sh' #Make the bin Directory executable
+
 ```
+
+## Create a systemd unit file
+vi /etc/systemd/system/tomcat.service
+
+**Paste the following content:**
+
+```shell
+[Unit]
+Description=Tomcat 9 servlet container
+After=network.target
+
+[Service]
+Type=forking
+
+User=tomcat
+Group=tomcat
+
+Environment="JAVA_HOME=/usr/lib/jvm/jre"
+Environment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"
+
+Environment="CATALINA_BASE=/opt/tomcat/latest"
+Environment="CATALINA_HOME=/opt/tomcat/latest"
+Environment="CATALINA_PID=/opt/tomcat/latest/temp/tomcat.pid"
+Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+
+ExecStart=/opt/tomcat/latest/bin/startup.sh
+ExecStop=/opt/tomcat/latest/bin/shutdown.sh
+
+[Install]
+WantedBy=multi-user.target
+
+```
+## Notify systemd that we created a new unit file by typing
+
+```
+sudo systemctl daemon-reload
+
+```
+
+## Enable and Start the tomcat service
+
+```
+sudo systemctl enable tomcat
+sudo systemctl start tomcat
+
+```
+
 > Note: Now you can access the tomcat Web-UI with Node-IP:8080
 
 ## Downloading jenkins WAR package
