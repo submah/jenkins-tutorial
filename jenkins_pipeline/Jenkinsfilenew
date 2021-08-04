@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Execute Shell Script') {
             steps {
-                sh 'echo `date`'
+                sh 'echo `hostname -I`'
             }
             }
     }
