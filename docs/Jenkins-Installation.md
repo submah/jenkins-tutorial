@@ -106,10 +106,10 @@ sudo cp jenkins.war tomcat/webapps/
 ## You can install jenkins directly through yum package
 ```code
 #Enable Jenkins repository by importing hte GPG key
-sudo curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 #Add the repository to your system with
-sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 #Once the repository is enabled, install the latest stable version of Jenkins by
 sudo yum install jenkins -y
