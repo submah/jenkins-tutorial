@@ -1,5 +1,5 @@
 pipeline {
-    agent maste
+    agent { label 'master' }
     environment {
     PATH = "/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin"
   }
