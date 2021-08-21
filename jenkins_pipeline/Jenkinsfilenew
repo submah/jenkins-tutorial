@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+    PATH = "/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin"
+  }
     stages {
         stage('Execute Shell Script') {
             steps {
