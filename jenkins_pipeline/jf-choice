@@ -1,0 +1,17 @@
+pipeline {
+  agent { label 'master' }
+  parameters {
+    choice(
+      name: 'Cloud_Provider_Name',
+      choices: ['AWS', 'MS', 'CGP', 'ABC', 'DEF'],
+      description: 'Select Your Cloud Provider'
+    )
+  }
+  stages {
+    stage('Environment') {
+      steps {
+        echo " You have selected ${params.Cloud_Provider_Name}"
+      }
+    }
+  }
+}
