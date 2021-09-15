@@ -7,5 +7,6 @@
   4. [Jenkins jobs setup](https://github.com/submah/jenkins-tutorial/blob/master/docs/Jenkins-jobs-setup.md)
   5. Jenkins Integration
   6. Jenkins User administration
+  7. [Configure Tomcat Manager APP to Deploy with Jenkins]()
 
 
