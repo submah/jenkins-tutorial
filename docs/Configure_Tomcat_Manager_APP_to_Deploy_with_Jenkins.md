@@ -13,4 +13,5 @@
 <user username="jenkins" password="jenkins" roles="tomcat,manager-gui,manager-script"/>
 ```
 
-3. 
+3. Now start the tomcat and and access the Manager App
+4. Give username as **manager** and password as **password** as defined above.
